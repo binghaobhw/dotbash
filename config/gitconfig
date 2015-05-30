@@ -1,0 +1,6 @@
+[user]
+	email = scorpio147wbh@gmail.com
+	name = Binghao Wang
+[core]
+	autocrlf = input
+	editor = vim
