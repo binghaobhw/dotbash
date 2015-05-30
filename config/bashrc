@@ -214,7 +214,7 @@ set_prompt () {
     local cyan='\[\e[0;36m\]'         # Cyan
     local white='\[\033[38;5;250m\]'  # White
 
-    PS1="\[\e]0;\w\a\]\n$yellow\u$white@$yellow\h $green\w"
+    PS1="$yellow\u$white@$yellow\h $green\w"
     local root_dir="$(dirname $(dirname $(readlink -f ${BASH_SOURCE[0]})))"
     local bin_dir="$root_dir/bin"
     local git_prompt_sh_path="${bin_dir}/git-prompt.sh"
