@@ -238,5 +238,6 @@ set_prompt () {
 }
 
 source ~/.bash/bin/git-prompt.sh
+source ~/.bash/bin/git-completion.sh
 set_prompt
 
