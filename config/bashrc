@@ -215,12 +215,8 @@ set_prompt () {
     local white='\[\033[38;5;250m\]'  # White
 
     PS1="$yellow\u$white@$yellow\h $green\w"
-    local root_dir="$(dirname $(dirname $(readlink -f ${BASH_SOURCE[0]})))"
-    local bin_dir="$root_dir/bin"
-    local git_prompt_sh_path="${bin_dir}/git-prompt.sh"
-    if [ -f $git_prompt_sh_path ]
+    if hash __git_ps1 2>/dev/null
     then
-        source $git_prompt_sh_path
         # Show if there are unstaged (*) and/or staged (+) changes
         # (#) for "no HEAD to compare against"
         GIT_PS1_SHOWDIRTYSTATE=1
@@ -241,4 +237,6 @@ set_prompt () {
     PS1="$PS1 \n$white\$ $color_off"
 }
 
+source ~/.bash/bin/git-prompt.sh
 set_prompt
+
