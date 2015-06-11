@@ -114,7 +114,9 @@ alias ll='ls -lFA'                              # long list with indicator
 alias la='ls -A'                              # all but . and ..
 alias l='ls -CF'                              #
 alias vi='vim'
-alias dirs='dirs -v'
+alias d='dirs -v'
+alias p='pushd'
+alias pp='popd'
 
 # Umask
 #
