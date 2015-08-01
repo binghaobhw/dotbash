@@ -242,3 +242,6 @@ source ~/.bash/bin/git-prompt.sh
 source ~/.bash/bin/git-completion.sh
 set_prompt
 
+export JAVA_TOOL_OPTIONS='-Dfile.encoding=utf8 -Duser.language=en'
+export JAVA_HOME=/cygpath/d/programs/java/jdk1.8.0_45
+export PATH=$JAVA_HOME/bin:$PATH
