@@ -200,7 +200,6 @@ alias pp='popd'
 # }
 # 
 # alias cd=cd_func
-export CC=
 
 set_prompt () {
     # Reset
