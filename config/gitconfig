@@ -1,6 +1,12 @@
 [user]
-	email = scorpio147wbh@gmail.com
-	name = Binghao Wang
+    email = scorpio147wbh@gmail.com
+    name = Binghao Wang
 [core]
-	autocrlf = input
-	editor = vim
+    autocrlf = input
+    editor = vim
+[alias]
+    ch = checkout
+    co = commit
+    st = status
+    br = branch
+    re = remote
