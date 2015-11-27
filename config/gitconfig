@@ -9,4 +9,7 @@
     co = commit
     st = status
     br = branch
-    re = remote
+    re = rebase
+    me = merge
+    hi = log --oneline --graph --decorate
+
