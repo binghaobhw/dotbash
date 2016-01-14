@@ -3,11 +3,11 @@ tmux has-session -t dev
 if [ $? != 0 ]
 then
     tmux new-session -s dev -n shell -d
-    tmux send-keys -t dev 'cd ~/workspace' C-m
+    tmux send-keys -t dev 'cd ~/workspace' C-m C-l
     tmux new-window -n editor -t dev
     tmux send-keys -t dev:editor 'cd ~/workspace && vim' C-m
     tmux new-window -n aliyun -t dev
-    tmux send-keys -t dev:aliyun 'ssh-aliyun' C-m
+    tmux send-keys -t dev:aliyun 'ssh-aliyun' C-m C-l
     tmux select-window -t dev:shell
 fi
 tmux attach -t dev
