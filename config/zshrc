@@ -54,7 +54,9 @@ plugins=()
 
 # User configuration
 
-export PATH="~/bin:$PATH"
+if [ -d "${HOME}/bin" ] ; then
+  export PATH="${HOME}/bin:${PATH}"
+fi
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
