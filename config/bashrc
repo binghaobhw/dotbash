@@ -201,47 +201,43 @@ alias pp='popd'
 # 
 # alias cd=cd_func
 
-set_prompt () {
-    # Reset
-    local color_off='\[\e[0m\]'       # Text Reset
+#set_prompt () {
+#    # Reset
+#    local color_off='\[\e[0m\]'       # Text Reset
+#
+#    # Regular Colors
+#    local black='\[\e[0;30m\]'        # Black
+#    local red='\[\033[38;5;210m\]'      # Red
+#    local green='\[\033[38;5;121m\]'        # Green
+#    local yellow='\[\033[38;5;222m\]' # Yellow
+#    local blue='\[\033[38;5;75m\]'    # Blue
+#    local purple='\[\e[0;35m\]'       # Purple
+#    local cyan='\[\e[0;36m\]'         # Cyan
+#    local white='\[\033[38;5;250m\]'  # White
+#
+#    PS1="$yellow\u$white@$yellow\h $green\w"
+#    if hash __git_ps1 2>/dev/null
+#    then
+#        # Show if there are unstaged (*) and/or staged (+) changes
+#        # (#) for "no HEAD to compare against"
+#        GIT_PS1_SHOWDIRTYSTATE=1
+#
+#        # Show if there is anything stashed ($)
+#        GIT_PS1_SHOWSTASHSTATE=1
+#
+#        # Show if there are untracked files (%)
+#        GIT_PS1_SHOWUNTRACKEDFILES=1
+#
+#        # Looks forward in the tree for a tag, so you know which tag you're behind
+#        GIT_PS1_DESCRIBE_STYLE='contains'
+#
+#        # Show how we're tracking relative to upstream
+#        GIT_PS1_SHOWUPSTREAM="auto"
+#        PS1="$PS1 $red"'$(__git_ps1 "(%s)")'
+#    fi
+#    PS1="$PS1 \n$white\$ $color_off"
+#}
 
-    # Regular Colors
-    local black='\[\e[0;30m\]'        # Black
-    local red='\[\033[38;5;210m\]'      # Red
-    local green='\[\033[38;5;121m\]'        # Green
-    local yellow='\[\033[38;5;222m\]' # Yellow
-    local blue='\[\033[38;5;75m\]'    # Blue
-    local purple='\[\e[0;35m\]'       # Purple
-    local cyan='\[\e[0;36m\]'         # Cyan
-    local white='\[\033[38;5;250m\]'  # White
-
-    PS1="$yellow\u$white@$yellow\h $green\w"
-    if hash __git_ps1 2>/dev/null
-    then
-        # Show if there are unstaged (*) and/or staged (+) changes
-        # (#) for "no HEAD to compare against"
-        GIT_PS1_SHOWDIRTYSTATE=1
-
-        # Show if there is anything stashed ($)
-        GIT_PS1_SHOWSTASHSTATE=1
-
-        # Show if there are untracked files (%)
-        GIT_PS1_SHOWUNTRACKEDFILES=1
-
-        # Looks forward in the tree for a tag, so you know which tag you're behind
-        GIT_PS1_DESCRIBE_STYLE='contains'
-
-        # Show how we're tracking relative to upstream
-        GIT_PS1_SHOWUPSTREAM="auto"
-        PS1="$PS1 $red"'$(__git_ps1 "(%s)")'
-    fi
-    PS1="$PS1 \n$white\$ $color_off"
-}
-
-source ~/.bash/bin/git-prompt.sh
-source ~/.bash/bin/git-completion.sh
-set_prompt
-
-export JAVA_TOOL_OPTIONS='-Dfile.encoding=utf8 -Duser.language=en'
-export JAVA_HOME=/cygpath/d/programs/java/jdk1.8.0_45
-export PATH=$JAVA_HOME/bin:$PATH
+#source ~/.bash/bin/git-prompt.sh
+#source ~/.bash/bin/git-completion.sh
+#set_prompt
