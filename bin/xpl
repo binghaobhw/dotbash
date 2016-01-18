@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ "${1}" == "" ]
+then
+    XPATH="."
+else
+    XPATH="$(cygpath -w "${1}")"
+fi
+explorer $XPATH &
