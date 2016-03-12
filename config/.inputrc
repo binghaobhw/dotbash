@@ -1,0 +1,16 @@
+# ~/.inputrc: readline initialization file.
+
+set convert-meta off
+set input-meta on
+set output-meta on
+
+set completion-ignore-case on
+set show-all-if-ambiguous on
+set skip-completed-text on
+
+# Append "/" to all dirnames
+set mark-directories on
+set mark-symlinked-directories on
+
+set match-hidden-files on
+

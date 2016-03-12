@@ -1,0 +1,37 @@
+# To override the alias instruction use a \ before, ie
+# \rm will call the real rm not the alias.
+
+# Default to human readable figures
+alias df='df -h'
+alias du='du -h'
+
+alias grep='grep --color'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+# Directories
+alias 0='cd'
+alias 1='pushd > /dev/null'
+alias 2='pushd +2 > /dev/null'
+alias 3='pushd +3 > /dev/null'
+alias 4='pushd +4 > /dev/null'
+alias 5='pushd +5 > /dev/null'
+alias 6='pushd +6 > /dev/null'
+alias 7='pushd +7 > /dev/null'
+alias 8='pushd +8 > /dev/null'
+alias 9='pushd +9 > /dev/null'
+
+alias md='mkdir -p'
+alias rd='rmdir -p'
+alias d='dirs -v'
+alias p='pushd > /dev/null'
+alias po='popd'
+
+alias ls='ls -h --color=auto'
+alias lsa='ls -A'
+
+alias l='ls -l'
+alias la='ls -lA'
+
+# For develop
+alias g='git'

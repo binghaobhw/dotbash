@@ -1,13 +1,13 @@
-##About
+## About
 
 This is my bash config.
 
-##Installation
+## Installation
 
 ```bash
 # clone
 cd
-git clone git@github.com:scorpio147wbh/dotbash.git .bash
+git clone https://github.com/scorpio147wbh/dotbash.git .bash
 
 # make symbolic links on $HOME to files on $HOME/.bash/config
 cd .bash
