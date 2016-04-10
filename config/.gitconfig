@@ -14,4 +14,4 @@
     hi = log --oneline --graph --decorate
 
 [push]
-	default = simple
+    default = simple
