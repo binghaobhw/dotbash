@@ -48,5 +48,5 @@ white='\[\e[0;37;1m\]'
 
 # Set prompt
 PS1="
-${green}\w${reset_color}
+${green}\w${reset_color}  ${blue}\u${white}@${blue}\h${reset_color}
 ${yellow}\$${reset_color} "
