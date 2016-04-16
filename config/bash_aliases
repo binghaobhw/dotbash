@@ -10,6 +10,11 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
 # Directories
+alias ..='cd ..'
+alias ..2='cd ../..'
+alias ..3='cd ../../..'
+alias ..4='cd ../../../..'
+alias ..5='cd ../../../../..'
 alias 0='cd'
 alias 1='pushd > /dev/null'
 alias 2='pushd +2 > /dev/null'
