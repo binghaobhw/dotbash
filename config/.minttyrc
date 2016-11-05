@@ -1,7 +1,8 @@
 BoldAsFont=no
+BoldAsColour=yes
 CursorType=block
 Font=Consolas
-FontHeight=15
+FontHeight=14
 RightClickAction=menu
 Term=xterm-256color
 ForegroundColour=198,198,198
@@ -26,7 +27,6 @@ BoldWhite=212,215,254
 Transparency=medium
 CursorBlinks=no
 FontSmoothing=full
-BoldAsColour=no
 Scrollbar=none
 Locale=C
 Charset=UTF-8
