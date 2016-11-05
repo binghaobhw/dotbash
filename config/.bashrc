@@ -50,3 +50,6 @@ white='\[\e[0;37;1m\]'
 PS1="
 ${green}\w${reset_color}  ${blue}\u${white}@${blue}\h${reset_color}
 ${yellow}\$${reset_color} "
+
+
+export LANG="en_US.UTF-8"
