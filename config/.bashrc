@@ -4,6 +4,7 @@ export BASH_CONFIG_DIR="${HOME}/.bash/config"
 
 # Load aliases
 source "${BASH_CONFIG_DIR}/bash_aliases"
+source "${BASH_CONFIG_DIR}/git-completion.bash"
 
 # Use case-insensitive filename globbing
 shopt -s nocaseglob
