@@ -47,9 +47,12 @@ purple='\[\e[0;35m\]'
 cyan='\[\e[0;36m\]'
 white='\[\e[0;37;1m\]'
 
+function parse_git_branch {
+    git symbolic-ref --short HEAD 2>/dev/null
+}
 # Set prompt
 PS1="
-${green}\w${reset_color}  ${blue}\u${white}@${blue}\h${reset_color}
+${green}\w${reset_color} ${yellow}"'$(parse_git_branch)'"${reset_color} ${blue}\u${white}@${blue}\h${reset_color}
 ${yellow}\$${reset_color} "
 
 
