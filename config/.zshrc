@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/Binghao/.oh-my-zsh
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -85,3 +85,15 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# --- Personal env ---
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/node22/bin:$PATH"
+
+# Proxy
+export HTTP_PROXY=http://127.0.0.1:7897
+export HTTPS_PROXY=http://127.0.0.1:7897
+export NO_PROXY=localhost,127.0.0.1
+
+# Wiki knowledge base root (override per machine if path differs)
+export WIKI_ROOT="$HOME/Documents/Wiki"
