@@ -15,3 +15,11 @@ for i in $(cd ${BIN_DIR} && ls)
 do
     ln -sv "$BIN_DIR/$i" "$HOME_BIN_DIR/$i"
 done
+
+CLAUDE_CONFIG_DIR="${HOME}/.bash/claude"
+CLAUDE_DIR="${HOME}/.claude"
+mkdir -p ${CLAUDE_DIR}
+for i in $(cd ${CLAUDE_CONFIG_DIR} && ls)
+do
+    ln -sv "${CLAUDE_CONFIG_DIR}/$i" "${CLAUDE_DIR}/$i"
+done
