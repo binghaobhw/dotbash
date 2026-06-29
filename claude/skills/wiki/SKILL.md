@@ -51,3 +51,17 @@ The user's argument is in `$ARGUMENTS`. Match the first word:
 - Every Ingest / Query / Lint action must append a record to `$WIKI_ROOT/wiki/log.md`
   in the format that file's section of `wiki/CLAUDE.md` specifies.
 - Respect the page format template and the "每个页面至少 2-3 个 [[链接]]" rule.
+
+## Commit changes to git
+
+The wiki is a git repository. After any Ingest or Lint action that modifies files
+(and after a Query that creates/updates a page), commit and push so the change is
+versioned:
+
+```bash
+cd "$WIKI_ROOT" && git add -A && git commit -m "<ingest|lint|query>: <short summary>" && git push
+```
+
+- One logical action per commit; use a message describing what changed.
+- A read-only Query that writes nothing needs no commit.
+- If `git push` fails (e.g. no network), still commit locally and tell the user.
