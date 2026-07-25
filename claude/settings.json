@@ -1,5 +1,9 @@
 {
   "env": {},
+  "statusLine": {
+    "type": "command",
+    "command": "bash ~/.bash/claude/statusline-command.sh"
+  },
   "permissions": {
     "deny": [
       "Bash(rm -rf /)",
